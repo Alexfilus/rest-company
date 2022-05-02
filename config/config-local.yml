@@ -1,0 +1,23 @@
+server:
+  AppVersion: 1.0.0
+  Port: :8080
+  Mode: Development
+  ReadTimeout: 5
+  WriteTimeout: 5
+
+logger:
+  Development: true
+  DisableCaller: false
+  DisableStacktrace: false
+  Encoding: json
+  Level: info
+
+redis:
+  Hosts: ["localhost:10001"]
+  Password: ""
+  PoolSize: 12000
+  DB: 0
+
+metrics:
+  Url: 0.0.0.0:7070
+  ServiceName: api
